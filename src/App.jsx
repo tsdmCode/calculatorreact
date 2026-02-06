@@ -1,6 +1,6 @@
 import { useReducer } from 'react';
 import './App.css';
-import { Button } from './components/Button';
+import { Button } from './components/Button/Button';
 import { Grid } from './components/Grid/Grid';
 import { Display } from './components/Display/Display';
 //kodet mens jeg er syg, så hvis den er lidt skod er det derfor
@@ -97,7 +97,6 @@ function App() {
   return (
     <>
       <h1>Calculator? I hardly knew her!</h1>
-      <div>{state.display}</div>
       <Display numbers={state.display} />
       <Grid gtc={2} gap={16}>
         <Grid gtc={3} gap={8}>
